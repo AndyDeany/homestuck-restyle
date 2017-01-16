@@ -18,5 +18,5 @@ function font_type(text="courier", link="Verdana") {
 }
 
 function font_size(size="14px") {
-    replace(/font-size: 14px/, "font-size: " + pixels);
+    replace(/font-size: 14px/, "font-size: " + size, false);
 }
