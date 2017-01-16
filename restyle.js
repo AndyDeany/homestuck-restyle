@@ -6,17 +6,17 @@ function replace(regex, replacement_string, body=true) {
     }
 }
 
-function color(text, background, backdrop) {
+function color(text="#000000", background="#EEEEEE", backdrop="#535353") {
     replace(/#000000/g, text);
     replace(/#EEEEEE/g, background);
     replace(/#535353/, backdrop, false);
 }
 
-function font_type(link, text) {
+function font_type(text="courier", link="Verdana") {
     replace(/font-family: Verdana/, "font-family: " + link);
     replace(/font-family: courier/g, "font-family: " + text);
 }
 
-function font_size(pixels) {
-    replace(/font-size: 14px;/, "font-size: " + pixels);
+function font_size(size="14px") {
+    replace(/font-size: 14px/, "font-size: " + pixels);
 }
