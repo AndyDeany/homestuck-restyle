@@ -1,0 +1,13 @@
+table[height="17"],
+table [height="110"],
+table [width=""],
+td [valign="bottom"],
+td [bgcolor="efefef"],
+td [src="images/spacer.gif"],
+td [height="7"] {
+	display: none;
+}
+
+td [width="950"] {
+	background: transparent;
+}
