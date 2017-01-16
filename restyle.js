@@ -20,3 +20,12 @@ function font_type(text="courier", link="Verdana") {
 function font_size(size="14px") {
     replace(/font-size: 14px/, "font-size: " + size, false);
 }
+
+function comic_only() {
+    var link = document.createElement("link");
+    link.type = "text/css";
+    link.rel = "stylesheet";
+    link.href = "https://rawgit.com/AndyDeany/homestuck-restyle/master/comic_only.css";
+    document.head.appendChild(link);
+}
+
