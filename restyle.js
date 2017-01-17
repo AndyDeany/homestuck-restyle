@@ -29,3 +29,6 @@ function comic_only() {
     document.head.appendChild(link);
 }
 
+function display() {
+    document.body.setAttribute("style", "display: initial;")
+}
