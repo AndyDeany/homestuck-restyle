@@ -29,6 +29,11 @@ function comic_only() {
     document.head.appendChild(link);
 }
 
-function display() {
+async function display(delay=1) {   // delay in milliseconds
+    await sleep(delay);
     document.body.setAttribute("style", "display: initial;")
+}
+
+function sleep(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
 }
